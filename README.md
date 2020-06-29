@@ -31,8 +31,10 @@ Run app using:
 "python app.py"
 Open “http://localhost:5000/” URL to test the app in the Postman.Routes
 1. "http://localhost:5000/customers"
+
 a. In this route, select the POST method then the user can INSERT in Customers Table by passing
 JSON Object in the body.
+
 Example:
 {
 "Address": "Amazing Road",
@@ -47,9 +49,12 @@ Example:
 "PostalCode": "51100",
 "Region": null
 }
+
 b. "http://localhost:5000/customers/<customer_id>"
+
 To UPDATE in Customers table enter the customerID (e.g. VINET) in URL then select the PUT
 method and pass the JSON in the body.
+
 Example:
 {
 "Address": "Fun Place",
@@ -64,10 +69,12 @@ Example:
 "PostalCode": "51100",
 "Region": null
 }
+
 c. To SELECT all columns from the Customers table enter the CustomerID in URL and select the
 GET method to fetch all data in JSON format.2. "http://localhost:5000/products"
 a. In this route, select the POST method then the user can INSERT in Products Table by passing
 JSON Object in the body.
+
 Example:
 {
 "CategoryID": 2,
@@ -81,9 +88,11 @@ Example:
 "UnitsInStock": 29,
 "UnitsOnOrder": 4
 }
+
 b. "http://localhost:5000/products/<product_id>"
 To UPDATE in Products table enter the ProductID (e.g. 5) in URL then select the PUT method and
 pass the JSON in the body.
+
 Example:
 {
 "CategoryID": 1,
@@ -97,7 +106,9 @@ Example:
 "UnitsInStock": 19,
 "UnitsOnOrder": 1
 }
+
 c. To SELECT all columns from the Products table enter the ProductID in URL and select the GET
 method to fetch all data in JSON format.
+
 3."http://localhost:5000/orderhistory/<customer_id>"To get Order history of the given customer to enter the CustomerID in URL and select GET method
 this will fetch all the Orders done by that particular customer
